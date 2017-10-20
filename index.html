@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/swiper-3.4.2.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/reset.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/common.css">
+    <link type="text/css" rel="stylesheet" href="Content/css/style.css">
+
+</head>
+<body ng-app="app">
+<header class="header">
+    <i class="fa fa-search"></i>
+    <h1>
+        <a ng-href="#/server">服务</a>
+        <a ng-href="#/finance">金融</a>
+    </h1>
+</header>
+
+<section class="section">
+    <ui-view></ui-view>
+</section>
+
+<footer class="footer">
+    <ul>
+        <li><i class="fa fa-random"></i><span>首页</span></li>
+        <li><i class="fa fa-level-up"></i><span>论坛</span></li>
+        <li><i class="fa fa-car"></i><span>选车</span></li>
+        <li><i class="fa fa-xing-square"></i><span>发现</span></li>
+        <li><i class="fa fa-user-o"></i><span>未登录</span></li>
+    </ul>
+</footer>
+<script type="text/javascript" src="Script/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="Script/swiper/swiper-3.3.1.min.js"></script>
+<script type="text/javascript" src="Script/Iscoll/iscroll.js"></script>
+<script type="text/javascript" src="Script/angular/angular.js"></script>
+<script type="text/javascript" src="Script/angular-ui/angular-ui-router.js"></script>
+<script type="text/javascript" src="App/app.js"></script>
+<script type="text/javascript" src="App/Directive/banDirective.js"></script>
+<script type="text/javascript" src="App/Directive/iscrollDirective.js"></script>
+<script type="text/javascript" src="App/Directive/carDirective.js"></script>
+<!--<script type="text/javascript" src="App/Service/"></script>-->
+<script type="text/javascript">
+
+    $('h1').on('click','a',function(){
+        $(this).addClass('on').siblings().removeClass('on')
+    })
+</script>
+</body>
+</html>
